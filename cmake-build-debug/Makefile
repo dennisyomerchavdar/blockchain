@@ -123,6 +123,60 @@ blockchain/fast:
 	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/build
 .PHONY : blockchain/fast
 
+block.o: block.cpp.o
+
+.PHONY : block.o
+
+# target to build an object file
+block.cpp.o:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/block.cpp.o
+.PHONY : block.cpp.o
+
+block.i: block.cpp.i
+
+.PHONY : block.i
+
+# target to preprocess a source file
+block.cpp.i:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/block.cpp.i
+.PHONY : block.cpp.i
+
+block.s: block.cpp.s
+
+.PHONY : block.s
+
+# target to generate assembly for a file
+block.cpp.s:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/block.cpp.s
+.PHONY : block.cpp.s
+
+data.o: data.cpp.o
+
+.PHONY : data.o
+
+# target to build an object file
+data.cpp.o:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/data.cpp.o
+.PHONY : data.cpp.o
+
+data.i: data.cpp.i
+
+.PHONY : data.i
+
+# target to preprocess a source file
+data.cpp.i:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/data.cpp.i
+.PHONY : data.cpp.i
+
+data.s: data.cpp.s
+
+.PHONY : data.s
+
+# target to generate assembly for a file
+data.cpp.s:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/data.cpp.s
+.PHONY : data.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +213,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... blockchain"
+	@echo "... block.o"
+	@echo "... block.i"
+	@echo "... block.s"
+	@echo "... data.o"
+	@echo "... data.i"
+	@echo "... data.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

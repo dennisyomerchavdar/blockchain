@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/omer/CLionProjects/blockchain/block.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/block.h">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/data.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/data.h">
+			<Option target="blockchain"/>
+		</Unit>
 		<Unit filename="/home/omer/CLionProjects/blockchain/main.cpp">
 			<Option target="blockchain"/>
 		</Unit>
