@@ -70,22 +70,9 @@ CMakeFiles/blockchain.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blockchain.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omer/CLionProjects/blockchain/main.cpp -o CMakeFiles/blockchain.dir/main.cpp.s
 
-CMakeFiles/blockchain.dir/data.cpp.o: CMakeFiles/blockchain.dir/flags.make
-CMakeFiles/blockchain.dir/data.cpp.o: ../data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/blockchain.dir/data.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blockchain.dir/data.cpp.o -c /home/omer/CLionProjects/blockchain/data.cpp
-
-CMakeFiles/blockchain.dir/data.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blockchain.dir/data.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omer/CLionProjects/blockchain/data.cpp > CMakeFiles/blockchain.dir/data.cpp.i
-
-CMakeFiles/blockchain.dir/data.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blockchain.dir/data.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omer/CLionProjects/blockchain/data.cpp -o CMakeFiles/blockchain.dir/data.cpp.s
-
 CMakeFiles/blockchain.dir/block.cpp.o: CMakeFiles/blockchain.dir/flags.make
 CMakeFiles/blockchain.dir/block.cpp.o: ../block.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/blockchain.dir/block.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/blockchain.dir/block.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blockchain.dir/block.cpp.o -c /home/omer/CLionProjects/blockchain/block.cpp
 
 CMakeFiles/blockchain.dir/block.cpp.i: cmake_force
@@ -96,21 +83,79 @@ CMakeFiles/blockchain.dir/block.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blockchain.dir/block.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omer/CLionProjects/blockchain/block.cpp -o CMakeFiles/blockchain.dir/block.cpp.s
 
+CMakeFiles/blockchain.dir/blockchain.cpp.o: CMakeFiles/blockchain.dir/flags.make
+CMakeFiles/blockchain.dir/blockchain.cpp.o: ../blockchain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/blockchain.dir/blockchain.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blockchain.dir/blockchain.cpp.o -c /home/omer/CLionProjects/blockchain/blockchain.cpp
+
+CMakeFiles/blockchain.dir/blockchain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blockchain.dir/blockchain.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omer/CLionProjects/blockchain/blockchain.cpp > CMakeFiles/blockchain.dir/blockchain.cpp.i
+
+CMakeFiles/blockchain.dir/blockchain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blockchain.dir/blockchain.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omer/CLionProjects/blockchain/blockchain.cpp -o CMakeFiles/blockchain.dir/blockchain.cpp.s
+
+CMakeFiles/blockchain.dir/hash.cpp.o: CMakeFiles/blockchain.dir/flags.make
+CMakeFiles/blockchain.dir/hash.cpp.o: ../hash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/blockchain.dir/hash.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blockchain.dir/hash.cpp.o -c /home/omer/CLionProjects/blockchain/hash.cpp
+
+CMakeFiles/blockchain.dir/hash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blockchain.dir/hash.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omer/CLionProjects/blockchain/hash.cpp > CMakeFiles/blockchain.dir/hash.cpp.i
+
+CMakeFiles/blockchain.dir/hash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blockchain.dir/hash.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omer/CLionProjects/blockchain/hash.cpp -o CMakeFiles/blockchain.dir/hash.cpp.s
+
+CMakeFiles/blockchain.dir/transaction.cpp.o: CMakeFiles/blockchain.dir/flags.make
+CMakeFiles/blockchain.dir/transaction.cpp.o: ../transaction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/blockchain.dir/transaction.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blockchain.dir/transaction.cpp.o -c /home/omer/CLionProjects/blockchain/transaction.cpp
+
+CMakeFiles/blockchain.dir/transaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blockchain.dir/transaction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omer/CLionProjects/blockchain/transaction.cpp > CMakeFiles/blockchain.dir/transaction.cpp.i
+
+CMakeFiles/blockchain.dir/transaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blockchain.dir/transaction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omer/CLionProjects/blockchain/transaction.cpp -o CMakeFiles/blockchain.dir/transaction.cpp.s
+
+CMakeFiles/blockchain.dir/user.cpp.o: CMakeFiles/blockchain.dir/flags.make
+CMakeFiles/blockchain.dir/user.cpp.o: ../user.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/blockchain.dir/user.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/blockchain.dir/user.cpp.o -c /home/omer/CLionProjects/blockchain/user.cpp
+
+CMakeFiles/blockchain.dir/user.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/blockchain.dir/user.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/omer/CLionProjects/blockchain/user.cpp > CMakeFiles/blockchain.dir/user.cpp.i
+
+CMakeFiles/blockchain.dir/user.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/blockchain.dir/user.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/omer/CLionProjects/blockchain/user.cpp -o CMakeFiles/blockchain.dir/user.cpp.s
+
 # Object files for target blockchain
 blockchain_OBJECTS = \
 "CMakeFiles/blockchain.dir/main.cpp.o" \
-"CMakeFiles/blockchain.dir/data.cpp.o" \
-"CMakeFiles/blockchain.dir/block.cpp.o"
+"CMakeFiles/blockchain.dir/block.cpp.o" \
+"CMakeFiles/blockchain.dir/blockchain.cpp.o" \
+"CMakeFiles/blockchain.dir/hash.cpp.o" \
+"CMakeFiles/blockchain.dir/transaction.cpp.o" \
+"CMakeFiles/blockchain.dir/user.cpp.o"
 
 # External object files for target blockchain
 blockchain_EXTERNAL_OBJECTS =
 
 blockchain: CMakeFiles/blockchain.dir/main.cpp.o
-blockchain: CMakeFiles/blockchain.dir/data.cpp.o
 blockchain: CMakeFiles/blockchain.dir/block.cpp.o
+blockchain: CMakeFiles/blockchain.dir/blockchain.cpp.o
+blockchain: CMakeFiles/blockchain.dir/hash.cpp.o
+blockchain: CMakeFiles/blockchain.dir/transaction.cpp.o
+blockchain: CMakeFiles/blockchain.dir/user.cpp.o
 blockchain: CMakeFiles/blockchain.dir/build.make
 blockchain: CMakeFiles/blockchain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable blockchain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable blockchain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/blockchain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

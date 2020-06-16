@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/openssl"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -66,6 +67,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/openssl"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -88,13 +90,31 @@
 		<Unit filename="/home/omer/CLionProjects/blockchain/block.h">
 			<Option target="blockchain"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/blockchain/data.cpp">
+		<Unit filename="/home/omer/CLionProjects/blockchain/blockchain.cpp">
 			<Option target="blockchain"/>
 		</Unit>
-		<Unit filename="/home/omer/CLionProjects/blockchain/data.h">
+		<Unit filename="/home/omer/CLionProjects/blockchain/blockchain.h">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/hash.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/hash.h">
 			<Option target="blockchain"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/blockchain/main.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/transaction.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/transaction.h">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/user.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/user.h">
 			<Option target="blockchain"/>
 		</Unit>
 		<Unit filename="/home/omer/CLionProjects/blockchain/CMakeLists.txt">

@@ -150,32 +150,59 @@ block.cpp.s:
 	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/block.cpp.s
 .PHONY : block.cpp.s
 
-data.o: data.cpp.o
+blockchain.o: blockchain.cpp.o
 
-.PHONY : data.o
+.PHONY : blockchain.o
 
 # target to build an object file
-data.cpp.o:
-	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/data.cpp.o
-.PHONY : data.cpp.o
+blockchain.cpp.o:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/blockchain.cpp.o
+.PHONY : blockchain.cpp.o
 
-data.i: data.cpp.i
+blockchain.i: blockchain.cpp.i
 
-.PHONY : data.i
+.PHONY : blockchain.i
 
 # target to preprocess a source file
-data.cpp.i:
-	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/data.cpp.i
-.PHONY : data.cpp.i
+blockchain.cpp.i:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/blockchain.cpp.i
+.PHONY : blockchain.cpp.i
 
-data.s: data.cpp.s
+blockchain.s: blockchain.cpp.s
 
-.PHONY : data.s
+.PHONY : blockchain.s
 
 # target to generate assembly for a file
-data.cpp.s:
-	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/data.cpp.s
-.PHONY : data.cpp.s
+blockchain.cpp.s:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/blockchain.cpp.s
+.PHONY : blockchain.cpp.s
+
+hash.o: hash.cpp.o
+
+.PHONY : hash.o
+
+# target to build an object file
+hash.cpp.o:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/hash.cpp.o
+.PHONY : hash.cpp.o
+
+hash.i: hash.cpp.i
+
+.PHONY : hash.i
+
+# target to preprocess a source file
+hash.cpp.i:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/hash.cpp.i
+.PHONY : hash.cpp.i
+
+hash.s: hash.cpp.s
+
+.PHONY : hash.s
+
+# target to generate assembly for a file
+hash.cpp.s:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/hash.cpp.s
+.PHONY : hash.cpp.s
 
 main.o: main.cpp.o
 
@@ -204,6 +231,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+transaction.o: transaction.cpp.o
+
+.PHONY : transaction.o
+
+# target to build an object file
+transaction.cpp.o:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/transaction.cpp.o
+.PHONY : transaction.cpp.o
+
+transaction.i: transaction.cpp.i
+
+.PHONY : transaction.i
+
+# target to preprocess a source file
+transaction.cpp.i:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/transaction.cpp.i
+.PHONY : transaction.cpp.i
+
+transaction.s: transaction.cpp.s
+
+.PHONY : transaction.s
+
+# target to generate assembly for a file
+transaction.cpp.s:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/transaction.cpp.s
+.PHONY : transaction.cpp.s
+
+user.o: user.cpp.o
+
+.PHONY : user.o
+
+# target to build an object file
+user.cpp.o:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/user.cpp.o
+.PHONY : user.cpp.o
+
+user.i: user.cpp.i
+
+.PHONY : user.i
+
+# target to preprocess a source file
+user.cpp.i:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/user.cpp.i
+.PHONY : user.cpp.i
+
+user.s: user.cpp.s
+
+.PHONY : user.s
+
+# target to generate assembly for a file
+user.cpp.s:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/user.cpp.s
+.PHONY : user.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,12 +297,21 @@ help:
 	@echo "... block.o"
 	@echo "... block.i"
 	@echo "... block.s"
-	@echo "... data.o"
-	@echo "... data.i"
-	@echo "... data.s"
+	@echo "... blockchain.o"
+	@echo "... blockchain.i"
+	@echo "... blockchain.s"
+	@echo "... hash.o"
+	@echo "... hash.i"
+	@echo "... hash.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... transaction.o"
+	@echo "... transaction.i"
+	@echo "... transaction.s"
+	@echo "... user.o"
+	@echo "... user.i"
+	@echo "... user.s"
 .PHONY : help
 
 
