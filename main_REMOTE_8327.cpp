@@ -1,7 +1,7 @@
 #include <iostream>
 #include "blockchain.h"
 #include "block.h"
-//#include "hash.h"
+#include "hash.h"
 #include "transaction.h"
 #include <string>
 #include <vector>

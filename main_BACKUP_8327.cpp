@@ -43,6 +43,13 @@ void *minerThread(void *miner){
 }
 
 int main() {
+<<<<<<< HEAD
+    //std::vector<Transaction> t = { Transaction( User(0,"omar"), User(1,"sam") , 300)};
+    //Block firstBlock( "123123" ,t);
+    //std::cout << firstBlock.getTransactions()[0].getAmount() << std::endl;
+    User aa(31, "asd", 61, 53);
+    std::cout << "pubKey: " << aa.getPublicKey() << " pubExp: " << aa.getPublicExp() << " priExp: " << aa.getPrivateExp() << std::endl;
+=======
     vector<User> users = {User(0,"omer") , User(1,"bora") , User(2,"berat"), User(3,"ahmet"), User(4,"yaman")};
     vector<Miner> miners = {Miner(-1,"fatih") , Miner(-2,"mert")};
 
@@ -74,5 +81,6 @@ int main() {
     }
 
     pthread_exit(NULL);
+>>>>>>> 5aa2d2710407047c96e17c2490b5a956b9ba2a6f
     return 0;
 }

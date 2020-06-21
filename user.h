@@ -15,7 +15,11 @@ public:
 
     string getName();
 
+<<<<<<< HEAD
     long getPublicKey();
+=======
+    string &getName();
+>>>>>>> 5aa2d2710407047c96e17c2490b5a956b9ba2a6f
 
     long getPublicExp();
 
@@ -26,9 +30,12 @@ public:
 private:
     long id;
     string name;
+<<<<<<< HEAD
     long publicKey;
     long publicExp;
     long privateExp;
+=======
+>>>>>>> 5aa2d2710407047c96e17c2490b5a956b9ba2a6f
 };
 
 
