@@ -3,6 +3,9 @@
 //
 
 #include "user.h"
+#include <vector>
+#include <iostream>
+using namespace std;
 
 long User::getId(){
     return id;
@@ -25,18 +28,27 @@ long User::getPrivateExp(){
     return privateExp;
 }
 
-bool User::verify(string plainText, string cipherText){
-    for(int i=0;i<plainText.length();i++){
-        long p = (long)plainText[i];
-        long c = (long)cipherText[i];
-        if(p != ((long)pow(c,privateExp) % publicKey)){
+bool User::verify(vector<long> plainText, vector<long> cipherText){
+    for(int i=0;i<plainText.size();i++){
+        long p = plainText[i];
+        long c = cipherText[i];
+        long exp = 1;
+        for(int j=0;j<privateExp;j++){
+            exp = exp * c;
+            exp = exp % publicKey;
+        }
+        if(p != exp){
             return false;
         }
+        /*
+        if(p != ((long)pow(c,privateExp) % publicKey)){
+            return false;
+        }*/
     }
     return true;
 }
 
-User::User(long id, string name, long prime1, long prime2) : id(id), name(name) {
+User::User(long id, const string& name, long prime1, long prime2) : id(id), name(name) {
     this->publicKey = prime1 * prime2;
     
     long lcm = prime1 - 1;
