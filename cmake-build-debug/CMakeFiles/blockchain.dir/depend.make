@@ -18,7 +18,6 @@ CMakeFiles/blockchain.dir/hash.cpp.o: ../hash.h
 
 CMakeFiles/blockchain.dir/main.cpp.o: ../block.h
 CMakeFiles/blockchain.dir/main.cpp.o: ../blockchain.h
-CMakeFiles/blockchain.dir/main.cpp.o: ../hash.h
 CMakeFiles/blockchain.dir/main.cpp.o: ../main.cpp
 CMakeFiles/blockchain.dir/main.cpp.o: ../miner.h
 CMakeFiles/blockchain.dir/main.cpp.o: ../transaction.h

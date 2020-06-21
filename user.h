@@ -10,21 +10,11 @@ using namespace std;
 class User {
 public:
     User(long id, string name, long prime1, long prime2);
-
     long getId();
-
     string getName();
-
-<<<<<<< HEAD
     long getPublicKey();
-=======
-    string &getName();
->>>>>>> 5aa2d2710407047c96e17c2490b5a956b9ba2a6f
-
     long getPublicExp();
-
     long getPrivateExp(); // for debug. REMOVE LATER!
-
     bool verify(string plainText, string cipherText);
 
 private:
