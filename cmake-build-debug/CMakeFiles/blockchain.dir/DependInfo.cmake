@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/omer/CLionProjects/blockchain/blockchain.cpp" "/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles/blockchain.dir/blockchain.cpp.o"
   "/home/omer/CLionProjects/blockchain/hash.cpp" "/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles/blockchain.dir/hash.cpp.o"
   "/home/omer/CLionProjects/blockchain/main.cpp" "/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles/blockchain.dir/main.cpp.o"
+  "/home/omer/CLionProjects/blockchain/miner.cpp" "/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles/blockchain.dir/miner.cpp.o"
   "/home/omer/CLionProjects/blockchain/transaction.cpp" "/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles/blockchain.dir/transaction.cpp.o"
   "/home/omer/CLionProjects/blockchain/user.cpp" "/home/omer/CLionProjects/blockchain/cmake-build-debug/CMakeFiles/blockchain.dir/user.cpp.o"
   )

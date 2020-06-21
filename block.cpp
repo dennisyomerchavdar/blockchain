@@ -4,17 +4,17 @@
 
 #include "block.h"
 
-const vector<Transaction> &Block::getTransactions() const {
+vector<Transaction> &Block::getTransactions() {
     return transactions;
 }
 
-const string &Block::getPrevHash() const {
+string &Block::getPrevHash() {
     return prevHash;
 }
 
-const string &Block::getHash() const {
+string &Block::getHash() {
     return hash;
 }
 
-Block::Block(const string &prevHash, const vector<Transaction> &transactions) : prevHash(prevHash),
+Block::Block(string &prevHash, vector<Transaction> &transactions) : prevHash(prevHash),
                                                                                 transactions(transactions) {}

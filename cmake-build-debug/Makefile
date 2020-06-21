@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/114/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/snap/clion/114/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -231,6 +231,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+miner.o: miner.cpp.o
+
+.PHONY : miner.o
+
+# target to build an object file
+miner.cpp.o:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/miner.cpp.o
+.PHONY : miner.cpp.o
+
+miner.i: miner.cpp.i
+
+.PHONY : miner.i
+
+# target to preprocess a source file
+miner.cpp.i:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/miner.cpp.i
+.PHONY : miner.cpp.i
+
+miner.s: miner.cpp.s
+
+.PHONY : miner.s
+
+# target to generate assembly for a file
+miner.cpp.s:
+	$(MAKE) -f CMakeFiles/blockchain.dir/build.make CMakeFiles/blockchain.dir/miner.cpp.s
+.PHONY : miner.cpp.s
+
 transaction.o: transaction.cpp.o
 
 .PHONY : transaction.o
@@ -306,6 +333,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... miner.o"
+	@echo "... miner.i"
+	@echo "... miner.s"
 	@echo "... transaction.o"
 	@echo "... transaction.i"
 	@echo "... transaction.s"

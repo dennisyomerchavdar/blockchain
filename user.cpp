@@ -4,12 +4,12 @@
 
 #include "user.h"
 
-long User::getId(){
+long User::getId() {
     return id;
 }
 
 
-string User::getName(){
+string &User::getName() {
     return name;
 }
 

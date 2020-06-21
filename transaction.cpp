@@ -8,16 +8,16 @@ Transaction::Transaction(User &paymentFrom, User &paymentTo, long amount) : paym
                                                                                         paymentTo(paymentTo),
                                                                                         amount(amount) {}
 
-User &Transaction::getPaymentFrom(){
+ User &Transaction::getPaymentFrom(){
     return paymentFrom;
 }
 
-User &Transaction::getPaymentTo(){
+ User &Transaction::getPaymentTo(){
     return paymentTo;
 }
 
 
-long Transaction::getAmount(){
+long Transaction::getAmount() {
     return amount;
 }
 

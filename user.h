@@ -15,7 +15,7 @@ public:
 
     string getName();
 
-    long getPublicKey();
+    string &getName();
 
     long getPublicExp();
 
@@ -26,9 +26,6 @@ public:
 private:
     long id;
     string name;
-    long publicKey;
-    long publicExp;
-    long privateExp;
 };
 
 
