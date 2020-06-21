@@ -9,12 +9,18 @@
 #include "string"
 class Transaction {
 public:
+    const User &getPaymentFrom() const;
+
+    const User &getPaymentTo() const;
+
+    long getAmount() const;
+
     Transaction(const User &paymentFrom, const User &paymentTo, long amount);
 
 private:
-    User paymentFrom;
-    User paymentTo;
-    long amount;
+    const User paymentFrom;
+    const User paymentTo;
+    const long amount;
     string toString(){
         return this->paymentFrom.getName() + ' ' + this->paymentTo.getName() + ' ' + to_string(this->amount);
     }

@@ -13,6 +13,8 @@ using namespace std;
 
 class Block {
 public:
+    Block(const string &prevHash, const vector<Transaction> &transactions);
+
     const vector<Transaction> &getTransactions() const;
 
     const string &getPrevHash() const;

@@ -15,3 +15,6 @@ const string &Block::getPrevHash() const {
 const string &Block::getHash() const {
     return hash;
 }
+
+Block::Block(const string &prevHash, const vector<Transaction> &transactions) : prevHash(prevHash),
+                                                                                transactions(transactions) {}
