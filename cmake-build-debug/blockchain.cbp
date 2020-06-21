@@ -105,6 +105,12 @@
 		<Unit filename="/home/omer/CLionProjects/blockchain/main.cpp">
 			<Option target="blockchain"/>
 		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/miner.cpp">
+			<Option target="blockchain"/>
+		</Unit>
+		<Unit filename="/home/omer/CLionProjects/blockchain/miner.h">
+			<Option target="blockchain"/>
+		</Unit>
 		<Unit filename="/home/omer/CLionProjects/blockchain/transaction.cpp">
 			<Option target="blockchain"/>
 		</Unit>

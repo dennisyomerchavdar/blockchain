@@ -13,13 +13,13 @@ using namespace std;
 
 class Block {
 public:
-    Block(const string &prevHash, const vector<Transaction> &transactions);
+    Block( string &prevHash,  vector<Transaction> &transactions);
 
-    const vector<Transaction> &getTransactions() const;
+     vector<Transaction> &getTransactions();
 
-    const string &getPrevHash() const;
+     string &getPrevHash() ;
 
-    const string &getHash() const;
+     string &getHash() ;
 
 private:
     string prevHash;

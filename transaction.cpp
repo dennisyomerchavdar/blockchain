@@ -4,20 +4,20 @@
 
 #include "transaction.h"
 
-Transaction::Transaction(const User &paymentFrom, const User &paymentTo, long amount) : paymentFrom(paymentFrom),
+Transaction::Transaction(User &paymentFrom, User &paymentTo, long amount) : paymentFrom(paymentFrom),
                                                                                         paymentTo(paymentTo),
                                                                                         amount(amount) {}
 
-const User &Transaction::getPaymentFrom() const {
+ User &Transaction::getPaymentFrom(){
     return paymentFrom;
 }
 
-const User &Transaction::getPaymentTo() const {
+ User &Transaction::getPaymentTo(){
     return paymentTo;
 }
 
 
-long Transaction::getAmount() const {
+long Transaction::getAmount() {
     return amount;
 }
 

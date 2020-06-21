@@ -10,15 +10,15 @@ class User {
 public:
     User(long id, const string &name);
 
-    const long getId() const;
+    long getId();
 
 
-    const string &getName() const;
+    string &getName();
 
 
 private:
-    const long id;
-    const string name;
+    long id;
+    string name;
 };
 
 
