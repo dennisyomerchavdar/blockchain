@@ -5,20 +5,30 @@
 #ifndef BLOCKCHAIN_USER_H
 #define BLOCKCHAIN_USER_H
 #include <string>
+#include <math.h>
 using namespace std;
 class User {
 public:
-    User(long id, const string &name);
+    User(long id, string name, long prime1, long prime2);
 
-    const long getId() const;
+    long getId();
 
+    string getName();
 
-    const string &getName() const;
+    long getPublicKey();
 
+    long getPublicExp();
+
+    long getPrivateExp(); // for debug. REMOVE LATER!
+
+    bool verify(string plainText, string cipherText);
 
 private:
-    const long id;
-    const string name;
+    long id;
+    string name;
+    long publicKey;
+    long publicExp;
+    long privateExp;
 };
 
 
