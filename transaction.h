@@ -15,8 +15,13 @@ public:
 
     long getAmount();
 
+    bool getValid();
+
     Transaction(long id, User paymentFrom, User paymentTo, long amount);
 
+    string toString(){
+        return to_string(this->id) + ' ' + this->paymentFrom.getName() + ' ' + this->paymentTo.getName() + ' ' + to_string(this->amount) + ' ';
+    }
 private:
     long id;
     User paymentFrom;
@@ -24,9 +29,7 @@ private:
     long payerSignature;
     long amount;
     bool valid;
-    string toString(){
-        return to_string(this->id) + ' ' + this->paymentFrom.getName() + ' ' + this->paymentTo.getName() + ' ' + to_string(this->amount);
-    }
+
 };
 
 

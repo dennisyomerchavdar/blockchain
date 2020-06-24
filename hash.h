@@ -12,12 +12,7 @@ using namespace std;
 
 class Hash {
 public:
-    Hash(void);
-    Hash(string s);
-    string getHash();
-
-private:
-    string hash;
+    static string getHash(string s);
 };
 
 

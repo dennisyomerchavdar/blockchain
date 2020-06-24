@@ -8,4 +8,4 @@ link_libraries(crypto)
 link_libraries(pthread)
 
 
-add_executable(blockchain main.cpp block.cpp block.h blockchain.cpp blockchain.h hash.cpp hash.cpp hash.h transaction.cpp transaction.h user.cpp user.h miner.cpp miner.h)
+add_executable(blockchain main.cpp block.cpp block.h blockchain.cpp blockchain.h hash.cpp hash.cpp hash.h transaction.cpp transaction.h user.cpp user.h miner.cpp miner.h semaphore.h)

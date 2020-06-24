@@ -13,7 +13,7 @@ using namespace std;
 
 class Block {
 public:
-    Block( string &prevHash,  vector<Transaction> &transactions);
+    Block( string prevHash,  vector<Transaction> transactions , string hash);
 
      vector<Transaction> &getTransactions();
 

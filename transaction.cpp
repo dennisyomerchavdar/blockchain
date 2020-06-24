@@ -27,18 +27,6 @@ Transaction::Transaction(long id , User paymentFrom, User paymentTo, long amount
         cipherText.push_back(exp);
         //cipherText += to_string((long)pow((long)transactionText[i],senderPublicExp)%senderPublicKey);
     }
-    cout << paymentFrom.getPublicExp() << endl;
-    cout << paymentFrom.getPublicKey() << endl;
-    cout << paymentFrom.getPrivateExp() << endl;
-    cout << transactionText << endl;
-    for(int i=0;i<plainText.size();i++){
-        cout << plainText[i] << " ";
-    }
-    cout << endl;
-    for(int i=0;i<cipherText.size();i++){
-        cout << cipherText[i] << " ";
-    }
-    cout << endl;
     //cout << transactionText << endl;
     //cout << cipherText << endl;
     valid = paymentFrom.verify(plainText,cipherText) ? true : false;
@@ -54,6 +42,9 @@ User &Transaction::getPaymentTo(){
     return paymentTo;
 }
 
+bool Transaction::getValid() {
+    return valid;
+}
 
 long Transaction::getAmount() {
     return amount;

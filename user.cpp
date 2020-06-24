@@ -24,9 +24,6 @@ long User::getPublicExp(){
     return publicExp;
 }
 
-long User::getPrivateExp(){
-    return privateExp;
-}
 
 bool User::verify(vector<long> plainText, vector<long> cipherText){
     for(int i=0;i<plainText.size();i++){
@@ -48,7 +45,7 @@ bool User::verify(vector<long> plainText, vector<long> cipherText){
     return true;
 }
 
-User::User(long id, const string& name, long prime1, long prime2) : id(id), name(name) {
+User::User(long id, const string& name, long prime1, long prime2 ) : id(id), name(name){
     this->publicKey = prime1 * prime2;
     
     long lcm = prime1 - 1;

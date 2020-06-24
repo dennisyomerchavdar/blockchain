@@ -5,25 +5,19 @@
 #include "hash.h"
 #include <openssl/sha.h>
 #include <iostream>
+#include <iomanip>
 
-Hash::Hash() {}
-
-
-Hash::Hash(string s) {
+string Hash::getHash(string s) {
     unsigned char hash[SHA256_DIGEST_LENGTH];
     SHA256_CTX sha256;
     SHA256_Init(&sha256);
     SHA256_Update(&sha256, s.c_str(), s.size());
     SHA256_Final(hash, &sha256);
-
+    stringstream ss;
     for(int i = 0; i < SHA256_DIGEST_LENGTH; i++)
     {
-        std::cout << (int)hash[i];
+        ss << hex << setw(2) << setfill('0') << (int)hash[i];
     }
 
-    this->hash = "asd";
-}
-
-string Hash::getHash() {
-    return this->hash;
+    return ss.str();
 }

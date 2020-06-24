@@ -16,5 +16,5 @@ string &Block::getHash() {
     return hash;
 }
 
-Block::Block(string &prevHash, vector<Transaction> &transactions) : prevHash(prevHash),
-                                                                                transactions(transactions) {}
+Block::Block(string prevHash, vector<Transaction> transactions, string hash) : prevHash(prevHash),
+                                                                                transactions(transactions), hash(hash) {}

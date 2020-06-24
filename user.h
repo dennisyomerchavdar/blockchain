@@ -15,7 +15,6 @@ public:
     string getName();
     long getPublicKey();
     long getPublicExp();
-    long getPrivateExp(); // for debug. REMOVE LATER!
     bool verify(vector<long> plainText, vector<long> cipherText);
 
 private:
