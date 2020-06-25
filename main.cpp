@@ -22,7 +22,8 @@ struct UserThreadInput{
     char* name;
     long prime1;
     long prime2;
-    Blockchain* blockchain;
+    std::vector<Blockchain*> blockchain;
+    //Blockchain* blockchain;
 };
 
 struct MinerThreadInput{
@@ -37,23 +38,27 @@ void *userThread(void *threadInput){
     string name = ((struct UserThreadInput *)threadInput)->name;
     long prime1 = ((struct UserThreadInput *)threadInput)->prime1;
     long prime2 = ((struct UserThreadInput *)threadInput)->prime2;
-    Blockchain* blockchain = ((struct UserThreadInput *)threadInput)->blockchain;
+    Blockchain* blockchain;// = ((struct UserThreadInput *)threadInput)->blockchain;
+    std::vector<Blockchain*> chains = ((struct UserThreadInput *)threadInput)->blockchain;
     User user(id,name,prime1,prime2);
     std::stringstream msg;
     msg << id << "," << name << "," << prime1 << "," << prime2 << endl;
     std::cout<< msg.str();
     while(1){
         int randomAmount = rand() % 900 + 100;
-        int randomUser = rand() % blockchain->getUsers().size();
-        blockchain->mut.lock();
-        User tempUser = blockchain->getUsers()[randomUser];
-        blockchain->mut.unlock();
-        if(tempUser.getId() != id){
-            blockchain->semaphore.wait();
+        int randomUser = rand() % chains[0]->getUsers().size();
+        for(int j=0;j<chains.size();j++){
+            blockchain = chains[j];
             blockchain->mut.lock();
-            blockchain->addToTransactionPool(user,tempUser,randomAmount);
+            User tempUser = blockchain->getUsers()[randomUser];
             blockchain->mut.unlock();
+            if(tempUser.getId() != id){
+                blockchain->semaphore.wait();
+                blockchain->mut.lock();
+                blockchain->addToTransactionPool(user,tempUser,randomAmount);
+                blockchain->mut.unlock();
 
+            }
         }
     }
 }
@@ -62,6 +67,7 @@ void *minerThread(void *threadInput){
     long id = ((struct MinerThreadInput *)threadInput)->id;
     string name = ((struct MinerThreadInput *)threadInput)->name;
     Blockchain* blockchain = ((struct MinerThreadInput *)threadInput)->blockchain;
+
     std::stringstream msg;
     msg << id << "," << name << endl;
     std::cout<< msg.str();
@@ -95,13 +101,19 @@ void *minerThread(void *threadInput){
             blockchain->mut.unlock();
         }
 
+
+
     }
 }
 
 int main() {
     Blockchain* bc = new Blockchain();
-    vector<UserThreadInput> users = { {0,"omer" ,3,5, bc} , {1,"bora", 5,7,bc} , {2,"berat" , 7,11,bc}, {3,"ahmet", 11,13,bc}, {4,"yaman", 13,17,bc}};
-    vector<MinerThreadInput> miners = {{-1,"fatih", bc} , {-2,"mert",bc} };
+    Blockchain* bc2 = new Blockchain();
+    std::vector<Blockchain*> chains;
+    chains.push_back(bc);
+    chains.push_back(bc2);
+    vector<UserThreadInput> users = { {0,"omer" ,3,5, chains} , {1,"bora", 5,7,chains} , {2,"berat" , 7,11,chains}, {3,"ahmet", 11,13,chains}, {4,"yaman", 13,17,chains}};
+    vector<MinerThreadInput> miners = {{-1,"fatih", bc} , {-2,"mert",bc} , {-3,"murat",bc2} };
 
     pthread_t uthreads[users.size()];
     pthread_t mthreads[miners.size()];
@@ -109,11 +121,15 @@ int main() {
     for( int i = 0; i < users.size(); i++ ) {
         User newUser(users[i].id,users[i].name,users[i].prime1,users[i].prime2);
         bc->addUser(newUser);
+        bc2->addUser(newUser);
     }
+
 
     for( int i = 0; i < miners.size(); i++ ) {
         Miner newMiner(miners[i].id,miners[i].name);
         bc->addMiner(newMiner);
+        bc2->addMiner(newMiner);
+        //miners[i].blockchain->addMiner(newMiner);
     }
 
     srand (time(NULL));
