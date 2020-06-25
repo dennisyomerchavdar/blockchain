@@ -1,0 +1,4 @@
+/snap/clion/114/bin/cmake/linux/bin/cmake -G "CodeBlocks - Unix Makefiles" /home/omer/CLionProjects/blockchain
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/omer/CLionProjects/blockchain

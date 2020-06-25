@@ -1,0 +1,3 @@
+/home/omer/CLionProjects/blockchain/CMakeFiles/rebuild_cache.dir
+/home/omer/CLionProjects/blockchain/CMakeFiles/edit_cache.dir
+/home/omer/CLionProjects/blockchain/CMakeFiles/blockchain.dir
